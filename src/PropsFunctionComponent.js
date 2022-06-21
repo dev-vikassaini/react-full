@@ -5,13 +5,21 @@ function PropsFunctionComponent(props) {
     <React.Fragment>
       <h4>Props in function component</h4>
       <p>
-        Name: <b>{props.name}</b>
-      </p>
-      <p>
-        Age: <b>{props.age}</b>
-      </p>
-      <p>
-        Sex: <b>{props.sex}</b>
+        Name:{" "}
+        <b>
+          {" "}
+          <span> {props.name}</span>
+        </b>
+        Age:{" "}
+        <b>
+          {" "}
+          <span> {props.age}</span>
+        </b>
+        Sex:{" "}
+        <b>
+          {" "}
+          <span> {props.sex}</span>
+        </b>
       </p>
     </React.Fragment>
   );
