@@ -13,7 +13,15 @@ import ComponentUseEffect from "./ComponentUseEffect";
 import StyleComponent from "./StyleComponent";
 import HandleArrayListComponent from "./HandleArrayListComponent";
 import LiftingStateUpOrSendDataChildToParent from "./LiftingStateUpOrSendDataChildToParent";
-import PureComponentSample from './PureComponentSample';
+import PureComponentSample from "./PureComponentSample";
+import MemoUseMemoComponent from "./MemoUseMemoComponent";
+import RefComponent from "./RefComponent";
+import RefFunctionComponent from "./RefFunctionComponent";
+import ForwardRefComponentParent from "./ForwardRefComponentParent";
+import ControlledComponentSample from "./ControlledComponentSample";
+import UnControlledComponentSample from "./UnControlledComponentSample";
+import SimpleHOCComponent from "./SimpleHOCComponent";
+import RoutingComponent from "./RoutingComponent";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -64,8 +72,17 @@ function App() {
         <div className="col col-md-3">
           <LiftingStateUpOrSendDataChildToParent />
           <PureComponentSample />
+          <MemoUseMemoComponent />
+          <RefComponent />
+          <RefFunctionComponent />
+          <ForwardRefComponentParent />
+          <ControlledComponentSample />
+          <UnControlledComponentSample />
         </div>
-        <div className="col col-md-3"></div>
+        <div className="col col-md-3">
+          {/* <SimpleHOCComponent /> */}
+          <RoutingComponent />
+        </div>
       </div>
     </div>
   );
