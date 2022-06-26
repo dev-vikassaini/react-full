@@ -22,6 +22,16 @@ import ControlledComponentSample from "./ControlledComponentSample";
 import UnControlledComponentSample from "./UnControlledComponentSample";
 import SimpleHOCComponent from "./SimpleHOCComponent";
 import RoutingComponent from "./RoutingComponent";
+import SampleUseStateComponent from "./UseState/SampleUseStateComponent";
+import SampleUseReducerComponent from "./UseReducer/SampleUseReducerComponent";
+import SampleUseEffectComponent from "./UseEffect/SampleUseEffectComponent";
+import SampleRefComponent from "./UseRef/SampleRefComponent";
+import SampleUseLayoutEffect from "./UseLayoutEffect/SampleUseLayoutEffect";
+import SampleUseImperativeHandle from './UseImperativeHandle/SampleUseImperativeHandle';
+import SampleUseMemoComponent from './UseMemo/SampleUseMemoComponent';
+import SampleUseCallbackComponent from './UseCallback/SampleUseCallbackComponent';
+
+import { useGlobalContext } from "./UseContext/context";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -48,6 +58,7 @@ function App() {
     alert("Hello Parent from Child.");
   }
 
+  const contextData = useGlobalContext();
   return (
     <div className="App">
       <div className="row">
@@ -82,6 +93,17 @@ function App() {
         <div className="col col-md-3">
           {/* <SimpleHOCComponent /> */}
           <RoutingComponent />
+          <SampleUseStateComponent />
+          <SampleUseReducerComponent />
+          <SampleUseEffectComponent />
+          <SampleRefComponent />
+          <SampleUseLayoutEffect />
+          <SampleUseImperativeHandle />
+          <br/>
+          <h4>THIS IS CONTEXT DATA ------- {contextData}</h4>
+          <br/>
+          <SampleUseMemoComponent />
+          <SampleUseCallbackComponent />
         </div>
       </div>
     </div>
